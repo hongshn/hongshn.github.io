@@ -1,0 +1,17 @@
+--- 
+layout: post 
+title:  머신러닝에서도 공짜 점심은 없다!(The No Free Lunch Theorem)
+date:   2017-10-10 19:30:00 
+---   
+The No Free Lunch Theorem은 여러 분야(경제학, 컴퓨터, 머신러닝, optimization)에서 활용되는 문구(논문 제목, 이론 이름 등등..)입니다.
+
+저는 컴퓨터 아키텍쳐를 공부할 때, 이제는 cpu의 발전이 단일 프로세서의 성능을 높이는 것이 아닌 멀티 프로세서를 통해 이루어진다고 배울 때 The No Free Lunch Theorem에 대해 들었습니다. 
+프로그래머들은 CPU회사의 단일 프로세서 발전에 따라 가만히 있어도 본인의 어플리케이션의 성능이 증가했었습니다(Free Lunch). 하지만 멀티 프로세서로 CPU의 발전 방향이 바뀌면서 더 이상 가만히 앉아있어도 어플리케이션 성능이 증가하지 않았습니다(No Free Lunch). 이에 따라 프로그래머는 분산 프로그래밍을 통해 어플리케이션의 성능을 높여야 하게 되었습니다. 
+
+그렇다면 머신러닝에서 The No Free Lunch Theorem은 무엇 일까요?
+1.세상에는 완벽한 ML(machine learning)알고리즘은 존재 할 수 없다.
+--
+굉장히 슬픈 얘기지만 완벽한 ML알고리즘은 세상에 존재할 수 없다는 것이 The No Free Lunch Theorem의 핵심입니다. 우리가 “모델링하고자 하는 data의 distribution이 랜덤하다면 세상에 존재하는 어떤 머신러닝 알고리즘도 다른 알고리즘보다 뛰어날 수 없습니다.” 또는 특정 distribution에서 뛰어난 머신러닝 알고리즘은 다른 distribution에서도 뛰어날 수는 없습니다.
+
+2.data의 distribution이 랜덤하다는 것은 무슨 뜻 일까?
+--
